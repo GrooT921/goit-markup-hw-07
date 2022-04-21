@@ -715,7 +715,21 @@ textarea{
 
 /* Кнопки портфолио */
 
-.filter-button {
+.filter-list {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.filter-list__item {
+  margin-right: 8px;
+}
+
+.filter-list__item:last-child {
+  margin-right: 0;
+}
+
+.filter-list__button {
   padding: 6px 22px;
   border-radius: 4px;
   display: inline-block;
@@ -733,37 +747,23 @@ textarea{
   box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-button:hover,
-.filter-button:focus {
+.filter-list__button:hover,
+.filter-list__button:focus {
   color: var(--button-color-text);
   background-color: var(--accent-color-text);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.filter-list {
-  justify-content: center;
-  display: flex;
-  margin-bottom: 50px;
-}
-
-.filter-link {
-  margin-right: 8px;
-}
-
-.filter-link:last-child {
-  margin-right: 0;
-}
-
 /* Проекты */
 
-.flex-container {
+.project-list {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
 }
 
-.flex-element {
+.project-list__item {
   margin-right: 30px;
   margin-bottom: 30px;
 
@@ -771,27 +771,27 @@ textarea{
   box-sizing: border-box;
 }
 
-.project-link{
+.project-list__link{
 display: block;
 
 transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-link:hover, .project-link:focus{
+.project-list__link:hover, .project-list__link:focus{
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
 0px 4px 4px rgba(0, 0, 0, 0.06),
 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.flex-element:nth-child(3n) {
+.project-list__item:nth-child(3n) {
   margin-right: 0;
 }
 
-.flex-element:nth-last-child(-n + 3) {
+.project-list__item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.project-name {
+.project-list__name {
   margin-bottom: 0;
 
   color: var(--basic-text-color);
@@ -801,14 +801,14 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   letter-spacing: 0.06em;
 }
 
-.project-text {
+.project-list__content {
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
 
-.text {
+.project-list__text {
   margin-top: 4px;
   margin-bottom: 0;
 
@@ -820,8 +820,8 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
 
 /* Оверлей проэкты */
 
-.project-link:hover .project-item,
-.project-link:focus .project-item{
+.project-list__link:hover .overlay-project__text,
+.project-list__link:focus .overlay-project__text{
   transform: translatey(0);
 }
 
@@ -830,7 +830,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   overflow: hidden;
 }
 
-.project-item{
+.overlay-project__text{
   position: absolute;
   padding: 63px 24px;
 
