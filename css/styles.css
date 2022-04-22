@@ -86,7 +86,9 @@ textarea{
 
 /* Логотип */
 
-.logo {
+.logo, 
+.logo-footer {
+  display: inline-block;
   margin-right: 93px;
 
   color: var(--accent-color-text);
@@ -97,8 +99,17 @@ textarea{
   line-height: 1.2;
 }
 
-.logo-black {
+.logo-footer{
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.logo__item--color {
   color: var(--basic-text-color);
+}
+
+.logo-footer__item--color {
+  color: var(--button-color-text)
 }
 
 /* Навигация */
@@ -539,24 +550,6 @@ textarea{
 .footer-item {
   flex-grow: 1;
 }
-
-.footer-logo {
-  margin-bottom: 20px;
-}
-
-.footer-logo__link {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-
-  color: var(--accent-color-text);
-}
-
-.footer-logo__link--color{
-  color: var(--button-color-text);
-}
-
 
 .footer-list__item {
   margin-bottom: 9px;
