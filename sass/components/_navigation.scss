@@ -9,8 +9,7 @@
     align-items: center;
 }
 
-.studio::after,
-.portfolio::after {
+.nav__link--active:after{
     bottom: -1px;
     position: absolute;
     width: 100%;

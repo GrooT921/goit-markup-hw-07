@@ -1,7 +1,19 @@
 /* Чем мы занимаемся */
 
-.work {
+.section__section--no-padding-top {
     padding-top: 0;
+}
+
+.section__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    color: $basic-text-color;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
 }
 
 .development-list {
@@ -25,7 +37,7 @@
 
 /* Оформление чем мы занимаемся */
 
-.development-list__img {
+.development-list__box {
     position: relative;
 }
 
@@ -47,17 +59,4 @@
 
     color: $button-color-text;
     background: rgba(47, 48, 58, 0.8);
-}
-
-.development,
-.team-head {
-    margin-top: 0;
-    margin-bottom: 50px;
-
-    color: $basic-text-color;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
 }
